@@ -55,9 +55,9 @@ figcaption {
     text-align: center;
     font-size: 100px;
     animation: gradient 2s linear 1;
-    animation-fill-mode: backwards;
+    animation-fill-mode: both;
     animation-delay: 0.2s;
-    background: linear-gradient(to left, black, gold);
+    background: linear-gradient(to left, gold, black);
     background-size: 5000% 5000%;
     background-clip: text;
   -webkit-background-clip: text;
@@ -66,10 +66,10 @@ figcaption {
 
 @keyframes gradient {
 	0% {
-		background-position: 100% 50%;
+		background-position: 102% 50%;
 	}
 	100% {
-		background-position: 102% 50%;
+		background-position: 100% 50%;
 	}
 }
 /* 4 */
