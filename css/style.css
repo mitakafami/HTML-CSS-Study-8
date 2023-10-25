@@ -136,29 +136,33 @@ a:hover {
 }
 /* 6 */
 .loading_bar {
-    margin: auto;
     position: relative;
-}
-.progress2 {
     margin: 300px auto;
     width: 80%;
+    height: 120px;
     border-radius: 200px;
     border: 1px solid;
-    position: relative;
- }
-.progress-bar2 {
-    height: 120px;
-    border-radius: 600px;
-    position: relative;
 }
-.progress-moved .progress-bar2 {
-    width: 100%; 
+.progress2 {
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    position: relative;
+    left: 0;
     background-color: #ef474d;
-    animation: progressAnimation 5s;
+    animation: progressAnimation 5s both;
 }
 @keyframes progressAnimation {
-    0%   { width: 0%; background-color: rgba(249, 188, 202, 10%)}
-    100% { width: 100%; background-color: #ef474d; }
+    0% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
 }
 .loading_text {
     position: absolute;
